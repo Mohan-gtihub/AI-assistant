@@ -47,7 +47,7 @@ STATUS_ERROR = "Error: API key not configured"
 
 # Google AI Gemini model to use
 # Options: "gemini-flash-exp", "gemini-pro", "gemini-1.5-flash"
-AI_MODEL = "gemini-flash-exp"
+AI_MODEL = "gemini-1.5-flash"
 
 # API key environment variable name
 API_KEY_ENV = "GEMINI_API_KEY"

@@ -1,167 +1,136 @@
-# ✨ Magic Wand AI Tool
+# 🤖 AI Assistant - Your Personal Computer AI
 
-A minimalist, hotkey-activated AI tool that transforms your text instantly. Replace the 10-step AI workflow with a 3-step "Magic Moment".
+A comprehensive AI assistant that can do anything on your computer. Think of it as your personal Siri or Cortana that stays open and helps you with everything!
 
-## 🚀 The Magic Moment
+## 🚀 Quick Start
 
-1. **Highlight Text**: Select any text anywhere on your screen
-2. **Press Hotkey**: Press `Ctrl+Alt+A` to activate the Magic Wand
-3. **Give Command**: Type your command and see the magic happen!
-
-## 🎯 Perfect For
-
-- **Developers**: Refactor code, add documentation, convert formats
-- **Writers**: Improve text, translate, summarize
-- **Students**: Explain concepts, format essays
-- **Professionals**: Draft emails, format data
-
-## 📦 Installation
-
-### Prerequisites
-
-- Python 3.8 or higher
-- Google AI Gemini API key
-
-### Step 1: Clone the Repository
-
-```bash
-git clone <repository-url>
-cd AI-assistant
+### 1. Test Everything Works
+```powershell
+python test.py
 ```
 
-### Step 2: Install Dependencies
-
-```bash
-pip install -r requirements.txt
+### 2. Run the AI Assistant
+```powershell
+python ai_assistant.py
 ```
 
-### Step 3: Set Up Your API Key
+### 3. Use Your AI Assistant
+1. **Press `Ctrl+Alt+A`** - AI Assistant window appears
+2. **Ask anything** - "open notepad", "what can you do?", "system info"
+3. **Chat continuously** - The window stays open for ongoing conversation
+4. **Control your computer** - Open apps, search files, get system info
 
-1. Get your free API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
-2. Set the environment variable:
+## 🎨 Features
 
-**Windows:**
-```cmd
-set GEMINI_API_KEY=your_api_key_here
+- **🤖 Full AI Assistant** - Not just text transformation, but a complete AI companion
+- **💬 Chat Interface** - Stays open for continuous conversation
+- **⚡ Global Hotkey** - `Ctrl+Alt+A` to activate from anywhere
+- **🖥️ System Control** - Open applications, get system info
+- **📁 File Operations** - Search files, navigate directories
+- **🌐 Web & Information** - Answer questions, provide information
+- **📝 Text Processing** - Transform text, generate content
+- **🎪 Persistent Window** - Stays open until you close it
+
+## 🔧 Installation
+
+### Install Dependencies
+```powershell
+python install_dependencies.py
 ```
 
-**macOS/Linux:**
-```bash
-export GEMINI_API_KEY=your_api_key_here
+### Get API Key (Optional)
+1. Visit: https://makersuite.google.com/app/apikey
+2. Create a new API key
+3. Set it: `$env:GEMINI_API_KEY="your-key-here"`
+
+## 🧪 What You Can Ask
+
+### System Commands
+- `"open notepad"` - Opens Notepad
+- `"open calculator"` - Opens Calculator
+- `"open paint"` - Opens Paint
+- `"system info"` - Shows computer information
+
+### Information & Help
+- `"what can you do?"` - Shows all capabilities
+- `"help"` - Get assistance
+- `"computer info"` - System information
+
+### AI Conversations
+- `"How do I install Python?"`
+- `"What's the weather like?"`
+- `"Explain quantum computing"`
+- `"Write a poem about coding"`
+
+### File Operations
+- `"search for documents"`
+- `"find my photos"`
+- `"open my downloads"`
+
+## 📁 Files
+
+```
+AI-assistant/
+├── ai_assistant.py        # ✅ Main AI Assistant (NEW!)
+├── magic_wand_clean.py    # ✅ Text transformation tool
+├── test.py               # ✅ Test suite
+├── install_dependencies.py # ✅ Dependency installer
+├── requirements.txt      # ✅ Dependencies
+├── config.py            # ✅ Configuration
+└── README.md           # This file
 ```
 
-### Step 4: Run the Application
+## 🎯 How It Works
 
-```bash
-python magic_wand.py
+1. **Background Process** - App runs silently in the background
+2. **Global Hotkey** - `Ctrl+Alt+A` activates from anywhere
+3. **Chat Interface** - Full conversation window appears
+4. **System Integration** - Can control your computer
+5. **AI Intelligence** - Answers questions and helps with tasks
+6. **Persistent Window** - Stays open for ongoing use
+
+## 🔧 Troubleshooting
+
+### If the app doesn't start:
+```powershell
+python test.py
 ```
 
-## 🎮 Usage
+### If hotkey doesn't work:
+- Make sure no other app uses `Ctrl+Alt+A`
+- Try running as Administrator
 
-1. **Start the app**: Run `python magic_wand.py`
-2. **Select text**: Highlight any text in any application
-3. **Activate**: Press `Ctrl+Alt+A`
-4. **Command**: Type your transformation command
-5. **Paste**: Press `Ctrl+V` to paste the transformed text
+### If you see a blank window:
+- The app is working! Press `Ctrl+Alt+A` to activate
+- The window only appears when you use the hotkey
 
-### Example Commands
+### If API key issues:
+- Use demo mode: `python ai_assistant.py`
+- Or set API key: `$env:GEMINI_API_KEY="your-key"`
 
-- `"refactor this code"`
-- `"add documentation"`
-- `"translate to Spanish"`
-- `"explain this"`
-- `"make this more professional"`
-- `"convert to JSON"`
-- `"summarize this"`
+## 💡 Pro Tips
 
-## 🔧 Features
+- **Start with demo mode** to see how it works
+- **The app runs in background** - you won't see anything until you press the hotkey
+- **Chat continuously** - The window stays open for ongoing conversation
+- **Ask anything** - The AI can help with any task
+- **System commands work immediately** - No API key needed for basic functions
 
-- **Global Hotkey**: Works in any application
-- **Minimalist UI**: Clean, distraction-free interface
-- **System Tray**: Runs quietly in the background
-- **Instant Results**: No context switching required
-- **Clipboard Integration**: Seamless copy/paste workflow
+## 🎯 Key Differences from Magic Wand
 
-## 🛠️ Building Executables
+| Feature | Magic Wand | AI Assistant |
+|---------|------------|--------------|
+| **Purpose** | Text transformation | Full AI companion |
+| **Window** | Auto-closes | Stays open |
+| **Interface** | Simple input | Full chat |
+| **Commands** | Text only | Anything |
+| **System Control** | No | Yes |
+| **Conversation** | One-shot | Continuous |
 
-### Windows (.exe)
+## 🚀 Choose Your Tool
 
-```bash
-pip install pyinstaller
-pyinstaller --onefile --windowed --icon=icon.ico magic_wand.py
-```
+- **For text transformation**: Use `magic_wand_clean.py`
+- **For full AI assistant**: Use `ai_assistant.py` (Recommended!)
 
-### macOS (.app)
-
-```bash
-pip install pyinstaller
-pyinstaller --onefile --windowed --icon=icon.icns magic_wand.py
-```
-
-## 🎨 Customization
-
-### Changing the Hotkey
-
-Edit the hotkey in `magic_wand.py`:
-
-```python
-self.listener = keyboard.GlobalHotKeys({
-    '<ctrl>+<alt>+a': self.show_input_window  # Change this line
-})
-```
-
-### Custom Prompts
-
-Modify the prompt template in the `_process_command_async` method to customize AI behavior.
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-1. **"API key not configured"**
-   - Make sure you've set the `GEMINI_API_KEY` environment variable
-   - Restart the application after setting the key
-
-2. **Hotkey not working**
-   - Ensure the application has permission to listen for global hotkeys
-   - Try running as administrator on Windows
-
-3. **System tray not showing**
-   - Install `pystray` and `Pillow`: `pip install pystray Pillow`
-   - Some Linux distributions may require additional packages
-
-### Debug Mode
-
-Run with verbose output:
-
-```bash
-python magic_wand.py --debug
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- Built with [customtkinter](https://github.com/TomSchimansky/CustomTkinter) for modern UI
-- Powered by [Google AI Gemini](https://ai.google.dev/)
-- Inspired by the need for seamless AI integration
-
-## 📞 Support
-
-- Create an issue on GitHub
-- Join our Discord community
-- Email: support@magicwand.ai
-
----
-
-**Made with ✨ by the Magic Wand team**
+The AI Assistant is your comprehensive computer companion that can do anything! 🎉
 

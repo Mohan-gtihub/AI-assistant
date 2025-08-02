@@ -20,13 +20,33 @@ def check_python_version():
 def install_dependencies():
     """Install required dependencies"""
     print("📦 Installing dependencies...")
+    
+    # Check if we should use alternative installation
+    version = sys.version_info
+    if version.major == 3 and version.minor >= 13:
+        print("⚠️  Python 3.13 detected - using alternative installation method")
+        try:
+            # Import and run the alternative installation script
+            import install_dependencies as alt_install
+            return alt_install.install_dependencies_alternative()
+        except ImportError:
+            print("❌ Alternative installation script not found")
+            return False
+    
+    # Standard installation for older Python versions
     try:
         subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
         print("✅ Dependencies installed successfully")
         return True
     except subprocess.CalledProcessError as e:
         print(f"❌ Error installing dependencies: {e}")
-        return False
+        print("🔄 Trying alternative installation method...")
+        try:
+            import install_dependencies as alt_install
+            return alt_install.install_dependencies_alternative()
+        except ImportError:
+            print("❌ Alternative installation script not found")
+            return False
 
 def setup_api_key():
     """Guide user through API key setup"""

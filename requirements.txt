@@ -1,6 +1,57 @@
-customtkinter==5.2.2
-pyperclip==1.8.2
-pynput==1.7.6
-google-generativeai==0.8.3
-pystray==0.19.5
-Pillow==10.2.0 
+# Core GUI framework
+customtkinter>=5.2.0
+
+# Clipboard operations
+pyperclip>=1.8.0
+
+# Global hotkey detection
+pynput>=1.7.0
+
+# Google AI API
+google-generativeai>=0.8.0
+
+# System monitoring and control
+psutil>=5.9.0
+pywin32>=306
+
+# Voice recognition and text-to-speech
+pyttsx3>=2.90
+SpeechRecognition>=3.10.0
+
+# Screenshot and automation
+pyautogui>=0.9.54
+
+# Network speed testing
+speedtest-cli>=2.1.3
+
+# QR code generation
+qrcode[pil]>=7.4.2
+
+# System notifications
+plyer>=2.1.0
+
+# Task scheduling
+schedule>=1.2.0
+
+# Image processing
+Pillow>=10.0.0
+
+# HTTP requests
+requests>=2.31.0
+
+# Environment variable loading
+python-dotenv>=1.0.0
+
+# OpenCV for advanced image processing
+opencv-python>=4.8.0
+
+# Database operations
+sqlite3
+
+# Email functionality
+smtplib
+
+# Additional system utilities
+winreg
+socket
+hashlib 
